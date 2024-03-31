@@ -1,4 +1,4 @@
--- Snake Death v1.0.0
+-- Snake Death v1.0.1
 -- SmoothSpatula
 
 log.info("Successfully loaded ".._ENV["!guid"]..".")
@@ -13,6 +13,16 @@ else log.info("Failed to load death sfx.") end
 local global_death_sfx = gm.audio_create_stream(_ENV["!plugins_mod_folder_path"].."/snake-snake-snaaaake.ogg")
 if global_death_sfx ~= -1 then log.info("Loaded global death sfx.")
 else log.info("Failed to load global death sfx.") end
+
+-- ========== ImGui ==========
+
+local snake_death_enabled = true
+gui.add_to_menu_bar(function()
+    local new_value, clicked = ImGui.Checkbox("Enable Snaaaake Death", snake_death_enabled)
+    if clicked then
+        snake_death_enabled = new_value
+    end
+end)
 
 -- ========== Utils ==========
 
@@ -40,7 +50,7 @@ end)
 
 -- Play a custom sound when a player die and when all the players are dead 
 gm.post_script_hook(gm.constants.actor_set_dead, function(self, other, result, args)
-    if gm.actor_is_player(args[1])  then
+    if gm.actor_is_player(args[1]) and snake_death_enabled then
         local player_dead = args[1].value
 
         local dist = distance(player.x, player.y, player_dead.x, player_dead.y)
