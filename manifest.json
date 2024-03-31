@@ -1,6 +1,6 @@
 ﻿{
 	"name": "SnaaaakeDeath",
-	"version_number": "1.0.0",
+	"version_number": "1.0.1",
 	"website_url": "https://github.com/SmoothSpatula/SmoothSpatula-SnaaaakeDeath",
 	"description": "Adds Solid Snake death sound effects to the game",
 	"dependencies": [
