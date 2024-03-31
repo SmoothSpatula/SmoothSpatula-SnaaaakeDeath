@@ -12,6 +12,7 @@ This mod depends on the [Return Of Modding](https://github.com/return-of-modding
 ## Special Thanks To
 * [Klehrik](https://github.com/Klehrik) for the helper.lua file
 * The Return Of Modding team
+* Hideo Kojima
 
 ## Contact
 For questions or bug reports, you can find us in the [RoRR Modding Server](https://discord.gg/VjS57cszMq) @Miguelito @Umigatari
