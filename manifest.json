@@ -2,7 +2,7 @@
 	"name": "SnaaaakeDeath",
 	"version_number": "1.0.0",
 	"website_url": "",
-	"description": "Add snake death sound effects to the game",
+	"description": "Adds Solid Snake death sound effects to the game",
 	"dependencies": [
 		"ReturnOfModding-ReturnOfModding-1.0.0"
 	]
