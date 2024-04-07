@@ -1,8 +1,8 @@
--- Snake Death v1.0.1
+-- Snake Death v1.0.2
 -- SmoothSpatula
 
 log.info("Successfully loaded ".._ENV["!guid"]..".")
-Helper = require("./helper")
+mods.on_all_mods_loaded(function() for k, v in pairs(mods) do if type(v) == "table" and v.hfuncs then Helper = v end end end)
 
 -- ========== Audio ==========
 
