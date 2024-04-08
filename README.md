@@ -1,5 +1,5 @@
 # SmoothSpatula-SnaaaakeDeath
-Adds Solid Snake death sound effects to the game
+Adds Solid Snake death sound effects for you and your teammates
 
 ---
 
@@ -10,7 +10,7 @@ This mod depends on the [Return Of Modding](https://github.com/return-of-modding
 3. The mod should now be loaded. Enjoy!
   
 ## Special Thanks To
-* [Klehrik](https://github.com/Klehrik) for the helper.lua file
+* [Klehrik](https://github.com/Klehrik) for the helper mod
 * The Return Of Modding team
 * Hideo Kojima
 
