@@ -1,4 +1,4 @@
--- Snake Death v1.0.2
+-- Snake Death v1.0.3
 -- SmoothSpatula
 
 log.info("Successfully loaded ".._ENV["!guid"]..".")
